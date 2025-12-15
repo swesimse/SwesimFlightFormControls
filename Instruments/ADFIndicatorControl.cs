@@ -6,7 +6,10 @@ using System.Windows.Forms;
 
 namespace Instruments
 {
-	public class AdfIndicatorControl : Control
+    /// <summary>
+	/// ADF Indicator control.
+	/// </summary>
+    public class AdfIndicatorControl : Control
 	{
 		private float _bearingDegrees;
 

@@ -6,7 +6,10 @@ using System.Windows.Forms;
 
 namespace SwesimPiper
 {
-	public class PressureAltimeterControl : Control
+    /// <summary>
+	/// Pressure Altimeter control.
+	/// </summary>
+    public class PressureAltimeterControl : Control
 	{
 		private double _altitudeFeet;
 

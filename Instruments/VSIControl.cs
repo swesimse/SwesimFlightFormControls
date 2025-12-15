@@ -6,7 +6,10 @@ using System.Windows.Forms;
 
 namespace SwesimPiper
 {
-	public class VSIControl : Control
+    /// <summary>
+	/// Vertical Speed Indicator (VSI) control.
+	/// </summary>
+    public class VSIControl : Control
 	{
 		private double _verticalSpeedFpm; // feet per minute
 
