@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Drawing.Drawing2D;
 
-namespace Input
+namespace se.swesim.flight.formcontrols.Input
 {
     /// <summary>
     /// Axis calibration control.

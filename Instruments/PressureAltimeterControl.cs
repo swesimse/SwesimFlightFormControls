@@ -1,10 +1,7 @@
-﻿using System;
-using System.ComponentModel;
-using System.Drawing;
+﻿using System.ComponentModel;
 using System.Drawing.Drawing2D;
-using System.Windows.Forms;
 
-namespace SwesimPiper
+namespace se.swesim.flight.formcontrols.Instruments
 {
     /// <summary>
 	/// Pressure Altimeter control.
