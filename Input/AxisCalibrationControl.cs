@@ -3,6 +3,9 @@ using System.Drawing.Drawing2D;
 
 namespace Input
 {
+    /// <summary>
+    /// Axis calibration control.
+    /// </summary>
     public class AxisCalibrationControl : UserControl
     {
         private double _currentValue;
