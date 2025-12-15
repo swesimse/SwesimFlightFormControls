@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>$(AssemblyName)</PackageId>
+    <Title>Swesim WinForms Flight Controls</Title>
+    <Authors>Swesim</Authors>
+    <RootNamespace>se.swesim.flight.formcontrols</RootNamespace>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Instruments\ADFIndicatorControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Instruments\PressureAltimeterControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="Instruments\VSIControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
