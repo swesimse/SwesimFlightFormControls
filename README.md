@@ -1,6 +1,6 @@
 ﻿# Swesim Flight Form Controls
 
-[![NuGet](https://img.shields.io/nuget/v/SwesimFlightFormControls.svg)](https://www.nuget.org/packages/SwesimFlightFormControls) [![Build Status](<CI_BUILD_BADGE_URL>)](<CI_URL>) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](<LICENSE_URL>)
+[![NuGet](https://img.shields.io/nuget/v/SwesimFlightFormControls.svg)](https://www.nuget.org/packages/SwesimFlightFormControls) [![Publish to NuGet](https://github.com/swesimse/SwesimFlightFormControls/actions/workflows/nuget_production.yml/badge.svg)](https://github.com/swesimse/SwesimFlightFormControls/actions/workflows/nuget_production.yml) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](<LICENSE_URL>)
 
 A concise one-line description of what this library provides.
 
