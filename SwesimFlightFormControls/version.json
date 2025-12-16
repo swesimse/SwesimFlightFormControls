@@ -1,4 +1,4 @@
 ﻿{
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publicReleaseRefSpec": ["^refs/tags/v\\d+\\.\\d+\\.\\d+$"]
 }

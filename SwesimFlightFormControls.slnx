@@ -1,3 +1,4 @@
 <Solution>
-  <Project Path="SwesimFlightFormControls.csproj" />
+  <Project Path="Demo/Demo.csproj" Id="f9196e39-96e2-4409-a1c4-e6539852071d" />
+  <Project Path="SwesimFlightFormControls/SwesimFlightFormControls.csproj" />
 </Solution>
