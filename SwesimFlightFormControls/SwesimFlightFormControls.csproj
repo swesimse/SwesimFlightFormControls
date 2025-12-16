@@ -12,7 +12,7 @@
     <RootNamespace>se.swesim.flight.formcontrols</RootNamespace>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>..\README.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/swesimse/SwesimFlightFormControls</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
