@@ -21,13 +21,14 @@ jobs:
           dotnet-version: "8.0.x"
 
       - name: Restore
-        run: dotnet restore
+        run: dotnet restore .\SwesimFlightFormControls\SwesimFlightFormControls.csproj
 
       - name: Build
-        run: dotnet build -c Release --no-restore
+        run: dotnet build .\SwesimFlightFormControls\SwesimFlightFormControls.csproj -c Release --no-restore
 
       - name: Pack
-        run: dotnet pack -c Release --no-build -o ./artifacts
+        run: dotnet pack .\SwesimFlightFormControls\SwesimFlightFormControls.csproj -c Release --no-build -o .\artifacts
+
 
       - name: Push
         run: |
