@@ -35,6 +35,11 @@ namespace Demo
             headingIndicatorControl1.BugHeadingDegrees -= 1;
             if(headingIndicatorControl1.BugHeadingDegrees <= 0)
                 headingIndicatorControl1.BugHeadingDegrees = 360;
+
+            if(valueProgressBar1.Value >= valueProgressBar1.Maximum)
+                valueProgressBar1.Value = valueProgressBar1.Minimum;
+            else
+                valueProgressBar1.Value += 1;
         }
     }
 }

@@ -37,6 +37,7 @@
             timerDemo = new System.Windows.Forms.Timer(components);
             headingIndicatorControl1 = new se.swesim.flight.formcontrols.Instruments.HeadingIndicatorControl();
             attitudeIndicatorControl1 = new se.swesim.flight.formcontrols.Instruments.AttitudeIndicatorControl();
+            valueProgressBar1 = new se.swesim.flight.formcontrols.Controls.ValueProgressBar();
             SuspendLayout();
             // 
             // adfIndicatorControl1
@@ -127,11 +128,35 @@
             attitudeIndicatorControl1.TabIndex = 6;
             attitudeIndicatorControl1.Text = "attitudeIndicatorControl1";
             // 
+            // valueProgressBar1
+            // 
+            valueProgressBar1.BarColor = Color.FromArgb(60, 120, 255);
+            valueProgressBar1.BorderColor = Color.Gray;
+            valueProgressBar1.CornerRadius = 6;
+            valueProgressBar1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
+            valueProgressBar1.ForeColor = Color.White;
+            valueProgressBar1.Location = new Point(825, 137);
+            valueProgressBar1.Maximum = 100D;
+            valueProgressBar1.Minimum = 0D;
+            valueProgressBar1.Name = "valueProgressBar1";
+            valueProgressBar1.NegativeBarColor = Color.FromArgb(255, 120, 60);
+            valueProgressBar1.ShowValueOnly = true;
+            valueProgressBar1.ShowZeroLine = true;
+            valueProgressBar1.Size = new Size(335, 24);
+            valueProgressBar1.TabIndex = 7;
+            valueProgressBar1.Text = "valueProgressBar1";
+            valueProgressBar1.TrackColor = Color.FromArgb(30, 30, 30);
+            valueProgressBar1.UnitSuffix = "%";
+            valueProgressBar1.Value = 0D;
+            valueProgressBar1.ValueFormat = "{0:0}";
+            valueProgressBar1.ZeroLineColor = Color.FromArgb(180, 180, 180);
+            // 
             // FormDemo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1223, 506);
+            Controls.Add(valueProgressBar1);
             Controls.Add(attitudeIndicatorControl1);
             Controls.Add(headingIndicatorControl1);
             Controls.Add(vsiControl1);
@@ -154,5 +179,6 @@
         private System.Windows.Forms.Timer timerDemo;
         private se.swesim.flight.formcontrols.Instruments.HeadingIndicatorControl headingIndicatorControl1;
         private se.swesim.flight.formcontrols.Instruments.AttitudeIndicatorControl attitudeIndicatorControl1;
+        private se.swesim.flight.formcontrols.Controls.ValueProgressBar valueProgressBar1;
     }
 }
