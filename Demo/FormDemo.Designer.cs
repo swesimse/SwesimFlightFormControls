@@ -40,6 +40,7 @@
             valueProgressBar1 = new se.swesim.flight.formcontrols.Controls.ValueProgressBar();
             gi106bCdiControl1 = new se.swesim.flight.formcontrols.Instruments.Gi106BCdiControl();
             ki208CdiControl1 = new se.swesim.flight.formcontrols.Instruments.Ki208CdiControl();
+            tachometerControl1 = new se.swesim.flight.formcontrols.Instruments.TachometerControl();
             SuspendLayout();
             // 
             // adfIndicatorControl1
@@ -197,11 +198,39 @@
             ki208CdiControl1.TickColor = Color.White;
             ki208CdiControl1.ToFrom = se.swesim.flight.formcontrols.Instruments.Ki208ToFromState.Off;
             // 
+            // tachometerControl1
+            // 
+            tachometerControl1.BezelColor = Color.FromArgb(35, 35, 35);
+            tachometerControl1.EndRpm = 3500F;
+            tachometerControl1.FaceColor = Color.Black;
+            tachometerControl1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            tachometerControl1.ForeColor = Color.White;
+            tachometerControl1.GreenArcColor = Color.ForestGreen;
+            tachometerControl1.GreenArcEndRpm = 2600F;
+            tachometerControl1.GreenArcStartRpm = 500F;
+            tachometerControl1.LabelStepRpm = 500F;
+            tachometerControl1.Location = new Point(952, 249);
+            tachometerControl1.MaxAllowableRpm = 2700F;
+            tachometerControl1.Name = "tachometerControl1";
+            tachometerControl1.NeedleColor = Color.White;
+            tachometerControl1.RedArcColor = Color.Red;
+            tachometerControl1.Rpm = 0F;
+            tachometerControl1.ScaleEndAngle = 135F;
+            tachometerControl1.ScaleStartAngle = 225F;
+            tachometerControl1.ShowRpmText = true;
+            tachometerControl1.Size = new Size(240, 232);
+            tachometerControl1.StartRpm = 0F;
+            tachometerControl1.TabIndex = 10;
+            tachometerControl1.Text = "tachometerControl1";
+            tachometerControl1.TickColor = Color.White;
+            tachometerControl1.TickStepRpm = 100F;
+            // 
             // FormDemo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1223, 664);
+            Controls.Add(tachometerControl1);
             Controls.Add(ki208CdiControl1);
             Controls.Add(gi106bCdiControl1);
             Controls.Add(valueProgressBar1);
@@ -214,6 +243,7 @@
             Controls.Add(adfIndicatorControl1);
             Name = "FormDemo";
             Text = "SwesimFlightFormControls Demo";
+            KeyDown += FormDemo_KeyDown;
             ResumeLayout(false);
         }
 
@@ -230,5 +260,6 @@
         private se.swesim.flight.formcontrols.Controls.ValueProgressBar valueProgressBar1;
         private se.swesim.flight.formcontrols.Instruments.Gi106BCdiControl gi106bCdiControl1;
         private se.swesim.flight.formcontrols.Instruments.Ki208CdiControl ki208CdiControl1;
+        private se.swesim.flight.formcontrols.Instruments.TachometerControl tachometerControl1;
     }
 }
