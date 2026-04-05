@@ -38,6 +38,8 @@
             headingIndicatorControl1 = new se.swesim.flight.formcontrols.Instruments.HeadingIndicatorControl();
             attitudeIndicatorControl1 = new se.swesim.flight.formcontrols.Instruments.AttitudeIndicatorControl();
             valueProgressBar1 = new se.swesim.flight.formcontrols.Controls.ValueProgressBar();
+            gi106bCdiControl1 = new se.swesim.flight.formcontrols.Instruments.Gi106BCdiControl();
+            ki208CdiControl1 = new se.swesim.flight.formcontrols.Instruments.Ki208CdiControl();
             SuspendLayout();
             // 
             // adfIndicatorControl1
@@ -72,7 +74,7 @@
             // 
             axisCalibrationControl1.AxisName = "Axis";
             axisCalibrationControl1.CurrentValue = -100D;
-            axisCalibrationControl1.Location = new Point(825, 12);
+            axisCalibrationControl1.Location = new Point(12, 487);
             axisCalibrationControl1.Name = "axisCalibrationControl1";
             axisCalibrationControl1.Size = new Size(335, 80);
             axisCalibrationControl1.TabIndex = 2;
@@ -135,7 +137,7 @@
             valueProgressBar1.CornerRadius = 6;
             valueProgressBar1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Bold);
             valueProgressBar1.ForeColor = Color.White;
-            valueProgressBar1.Location = new Point(825, 137);
+            valueProgressBar1.Location = new Point(12, 612);
             valueProgressBar1.Maximum = 100D;
             valueProgressBar1.Minimum = 0D;
             valueProgressBar1.Name = "valueProgressBar1";
@@ -151,11 +153,57 @@
             valueProgressBar1.ValueFormat = "{0:0}";
             valueProgressBar1.ZeroLineColor = Color.FromArgb(180, 180, 180);
             // 
+            // gi106bCdiControl1
+            // 
+            gi106bCdiControl1.AnnunciatorColor = Color.LimeGreen;
+            gi106bCdiControl1.BezelColor = Color.FromArgb(40, 40, 40);
+            gi106bCdiControl1.CdiVisible = true;
+            gi106bCdiControl1.CourseDeviationDots = 0F;
+            gi106bCdiControl1.FaceColor = Color.Black;
+            gi106bCdiControl1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            gi106bCdiControl1.ForeColor = Color.White;
+            gi106bCdiControl1.GlideSlopeDots = 0F;
+            gi106bCdiControl1.GsVisible = true;
+            gi106bCdiControl1.Location = new Point(715, 12);
+            gi106bCdiControl1.Name = "gi106bCdiControl1";
+            gi106bCdiControl1.NeedleColor = Color.White;
+            gi106bCdiControl1.ObsDegrees = 0F;
+            gi106bCdiControl1.ShowGlideSlope = true;
+            gi106bCdiControl1.Size = new Size(220, 220);
+            gi106bCdiControl1.Source = se.swesim.flight.formcontrols.Instruments.Gi106BSource.GPS;
+            gi106bCdiControl1.TabIndex = 8;
+            gi106bCdiControl1.Text = "gi106bCdiControl1";
+            gi106bCdiControl1.TickColor = Color.White;
+            gi106bCdiControl1.ToFrom = se.swesim.flight.formcontrols.Instruments.ToFromState.Off;
+            // 
+            // ki208CdiControl1
+            // 
+            ki208CdiControl1.BezelColor = Color.FromArgb(20, 20, 20);
+            ki208CdiControl1.CdiVisible = true;
+            ki208CdiControl1.CourseDeviationDots = 0F;
+            ki208CdiControl1.FaceColor = Color.Black;
+            ki208CdiControl1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold);
+            ki208CdiControl1.ForeColor = Color.White;
+            ki208CdiControl1.Location = new Point(715, 249);
+            ki208CdiControl1.Name = "ki208CdiControl1";
+            ki208CdiControl1.NeedleColor = Color.White;
+            ki208CdiControl1.ObsDegrees = 0F;
+            ki208CdiControl1.PointerColor = Color.FromArgb(230, 210, 40);
+            ki208CdiControl1.ShowBrandText = true;
+            ki208CdiControl1.ShowObsKnobHint = true;
+            ki208CdiControl1.Size = new Size(220, 232);
+            ki208CdiControl1.TabIndex = 9;
+            ki208CdiControl1.Text = "ki208CdiControl1";
+            ki208CdiControl1.TickColor = Color.White;
+            ki208CdiControl1.ToFrom = se.swesim.flight.formcontrols.Instruments.Ki208ToFromState.Off;
+            // 
             // FormDemo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1223, 506);
+            ClientSize = new Size(1223, 664);
+            Controls.Add(ki208CdiControl1);
+            Controls.Add(gi106bCdiControl1);
             Controls.Add(valueProgressBar1);
             Controls.Add(attitudeIndicatorControl1);
             Controls.Add(headingIndicatorControl1);
@@ -180,5 +228,7 @@
         private se.swesim.flight.formcontrols.Instruments.HeadingIndicatorControl headingIndicatorControl1;
         private se.swesim.flight.formcontrols.Instruments.AttitudeIndicatorControl attitudeIndicatorControl1;
         private se.swesim.flight.formcontrols.Controls.ValueProgressBar valueProgressBar1;
+        private se.swesim.flight.formcontrols.Instruments.Gi106BCdiControl gi106bCdiControl1;
+        private se.swesim.flight.formcontrols.Instruments.Ki208CdiControl ki208CdiControl1;
     }
 }
